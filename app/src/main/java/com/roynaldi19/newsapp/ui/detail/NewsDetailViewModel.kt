@@ -1,8 +1,8 @@
-package com.dicoding.newsapp.ui.detail
+package com.roynaldi19.newsapp.ui.detail
 
 import androidx.lifecycle.*
-import com.dicoding.newsapp.data.NewsRepository
-import com.dicoding.newsapp.data.local.entity.NewsEntity
+import com.roynaldi19.newsapp.data.NewsRepository
+import com.roynaldi19.newsapp.data.local.entity.NewsEntity
 import kotlinx.coroutines.launch
 
 class NewsDetailViewModel(private val newsRepository: NewsRepository) : ViewModel() {

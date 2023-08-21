@@ -1,12 +1,12 @@
-package com.dicoding.newsapp.data
+package com.roynaldi19.newsapp.data
 
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.liveData
-import com.dicoding.newsapp.BuildConfig
-import com.dicoding.newsapp.data.local.entity.NewsEntity
-import com.dicoding.newsapp.data.local.room.NewsDao
-import com.dicoding.newsapp.data.remote.retrofit.ApiService
+import com.roynaldi19.newsapp.BuildConfig
+import com.roynaldi19.newsapp.data.local.entity.NewsEntity
+import com.roynaldi19.newsapp.data.local.room.NewsDao
+import com.roynaldi19.newsapp.data.remote.retrofit.ApiService
 
 class NewsRepository(
     private val apiService: ApiService,

@@ -1,7 +1,7 @@
-package com.dicoding.newsapp.ui.list
+package com.roynaldi19.newsapp.ui.list
 
 import androidx.lifecycle.ViewModel
-import com.dicoding.newsapp.data.NewsRepository
+import com.roynaldi19.newsapp.data.NewsRepository
 
 class NewsViewModel(private val newsRepository: NewsRepository) : ViewModel() {
     fun getHeadlineNews() = newsRepository.getHeadlineNews()

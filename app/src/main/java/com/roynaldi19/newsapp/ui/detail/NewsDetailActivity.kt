@@ -1,4 +1,4 @@
-package com.dicoding.newsapp.ui.detail
+package com.roynaldi19.newsapp.ui.detail
 
 import android.os.Bundle
 import android.view.Menu
@@ -7,10 +7,10 @@ import android.webkit.WebViewClient
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import com.dicoding.newsapp.R
-import com.dicoding.newsapp.data.local.entity.NewsEntity
-import com.dicoding.newsapp.databinding.ActivityNewsDetailBinding
-import com.dicoding.newsapp.ui.ViewModelFactory
+import com.roynaldi19.newsapp.R
+import com.roynaldi19.newsapp.data.local.entity.NewsEntity
+import com.roynaldi19.newsapp.databinding.ActivityNewsDetailBinding
+import com.roynaldi19.newsapp.ui.ViewModelFactory
 
 class NewsDetailActivity : AppCompatActivity() {
 

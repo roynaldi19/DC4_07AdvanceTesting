@@ -1,4 +1,4 @@
-package com.dicoding.newsapp.data
+package com.roynaldi19.newsapp.data
 
 sealed class Result<out R> private constructor() {
     data class Success<out T>(val data: T) : Result<T>()

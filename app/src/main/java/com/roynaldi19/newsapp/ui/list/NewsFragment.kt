@@ -1,4 +1,4 @@
-package com.dicoding.newsapp.ui.list
+package com.roynaldi19.newsapp.ui.list
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,11 +8,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.dicoding.newsapp.R
-import com.dicoding.newsapp.data.Result
-import com.dicoding.newsapp.databinding.FragmentNewsBinding
-import com.dicoding.newsapp.ui.ViewModelFactory
-import com.dicoding.newsapp.ui.detail.NewsDetailActivity
+import com.roynaldi19.newsapp.R
+import com.roynaldi19.newsapp.data.Result
+import com.roynaldi19.newsapp.databinding.FragmentNewsBinding
+import com.roynaldi19.newsapp.ui.ViewModelFactory
+import com.roynaldi19.newsapp.ui.detail.NewsDetailActivity
 
 class NewsFragment : Fragment() {
 

@@ -1,9 +1,9 @@
-package com.dicoding.newsapp.di
+package com.roynaldi19.newsapp.di
 
 import android.content.Context
-import com.dicoding.newsapp.data.NewsRepository
-import com.dicoding.newsapp.data.local.room.NewsDatabase
-import com.dicoding.newsapp.data.remote.retrofit.ApiConfig
+import com.roynaldi19.newsapp.data.NewsRepository
+import com.roynaldi19.newsapp.data.local.room.NewsDatabase
+import com.roynaldi19.newsapp.data.remote.retrofit.ApiConfig
 
 object Injection {
     fun provideRepository(context: Context): NewsRepository {

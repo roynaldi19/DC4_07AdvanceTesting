@@ -1,12 +1,12 @@
-package com.dicoding.newsapp.ui
+package com.roynaldi19.newsapp.ui
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.dicoding.newsapp.data.NewsRepository
-import com.dicoding.newsapp.di.Injection
-import com.dicoding.newsapp.ui.detail.NewsDetailViewModel
-import com.dicoding.newsapp.ui.list.NewsViewModel
+import com.roynaldi19.newsapp.data.NewsRepository
+import com.roynaldi19.newsapp.di.Injection
+import com.roynaldi19.newsapp.ui.detail.NewsDetailViewModel
+import com.roynaldi19.newsapp.ui.list.NewsViewModel
 
 class ViewModelFactory private constructor(private val newsRepository: NewsRepository) :
     ViewModelProvider.NewInstanceFactory() {
