@@ -12,6 +12,8 @@ import com.roynaldi19.newsapp.R
 import com.roynaldi19.newsapp.data.local.entity.NewsEntity
 import com.roynaldi19.newsapp.databinding.ItemNewsBinding
 import com.roynaldi19.newsapp.ui.list.NewsAdapter.MyViewHolder
+import com.roynaldi19.newsapp.utils.DateFormatter
+import java.util.TimeZone
 
 class NewsAdapter(private val onItemClick: (NewsEntity) -> Unit) : ListAdapter<NewsEntity, MyViewHolder>(
     DIFF_CALLBACK
@@ -32,7 +34,7 @@ class NewsAdapter(private val onItemClick: (NewsEntity) -> Unit) : ListAdapter<N
     ) {
         fun bind(news: NewsEntity) {
             binding.tvItemTitle.text = news.title
-            binding.tvItemPublishedDate.text = news.publishedAt
+            binding.tvItemPublishedDate.text = DateFormatter.formatDate(news.publishedAt, TimeZone.getDefault().id )
             Glide.with(itemView.context)
                 .load(news.urlToImage)
                 .apply(
