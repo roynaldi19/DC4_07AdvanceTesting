@@ -38,7 +38,9 @@ class NewsViewModelTest {
         val expectedNews = MutableLiveData<Result<List<NewsEntity>>>()
         expectedNews.value = Result.Success(dummyNews)
         `when`(newsRepository.getHeadlineNews()).thenReturn(expectedNews)
+
         val actualNews = newsViewModel.getHeadlineNews().getOrAwaitValue()
+
         Mockito.verify(newsRepository).getHeadlineNews()
         Assert.assertNotNull(actualNews)
         Assert.assertTrue(actualNews is Result.Success)
@@ -50,6 +52,7 @@ class NewsViewModelTest {
         val headlineNews = MutableLiveData<Result<List<NewsEntity>>>()
         headlineNews.value = Result.Error("Error")
         `when`(newsRepository.getHeadlineNews()).thenReturn(headlineNews)
+
         val actualNews = newsViewModel.getHeadlineNews().getOrAwaitValue()
         Mockito.verify(newsRepository).getHeadlineNews()
         Assert.assertNotNull(actualNews)

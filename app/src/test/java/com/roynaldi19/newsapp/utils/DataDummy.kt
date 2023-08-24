@@ -8,9 +8,7 @@ import com.roynaldi19.newsapp.data.remote.response.Source
 object DataDummy {
 
     fun generateDummyNewsEntity(): List<NewsEntity> {
-
         val newsList = ArrayList<NewsEntity>()
-
         for (i in 0..10) {
             val news = NewsEntity(
                 "Title $i",
@@ -20,9 +18,7 @@ object DataDummy {
             )
             newsList.add(news)
         }
-
         return newsList
-
     }
 
     fun generateDummyNewsResponse(): NewsResponse {

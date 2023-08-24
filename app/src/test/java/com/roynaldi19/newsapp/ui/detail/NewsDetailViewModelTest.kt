@@ -19,7 +19,7 @@ import org.mockito.junit.MockitoJUnitRunner
 
 @ExperimentalCoroutinesApi
 @RunWith(MockitoJUnitRunner::class)
-class NewsDetailViewModelTest {
+class NewsDetailViewModelTest{
 
     @get:Rule
     val instantExecutorRule = InstantTaskExecutorRule()
