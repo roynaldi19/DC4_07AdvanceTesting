@@ -8,7 +8,7 @@ plugins {
 android {
     compileSdkVersion 32
     defaultConfig {
-        applicationId "com.dicoding.newsapp"
+        applicationId "com.roynaldi19.newsapp"
         minSdkVersion 21
         targetSdkVersion 32
         versionCode 1
